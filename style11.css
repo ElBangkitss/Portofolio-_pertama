@@ -1,0 +1,295 @@
+/* RESET & UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a; /* Warna background gelap modern (slate-900) */
+    color: #e2e8f0;
+}
+
+span {
+    color: #38bdf8; /* Warna aksen biru terang */
+}
+
+/* NAVBAR */
+header {
+    background-color: rgba(15, 23, 42, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #1e293b;
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-content h5 {
+    font-size: 18px;
+    color: #38bdf8;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.hero-content h3 {
+    font-size: 24px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #94a3b8;
+    max-width: 600px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-3px);
+}
+
+/* SECTION UTILITIES */
+section {
+    padding: 100px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #38bdf8;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* ABOUT SECTION */
+.about {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.about-text p {
+    color: #94a3b8;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.skills-box h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-item {
+    background-color: #1e293b;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #334155;
+}
+
+/* PROJECTS SECTION */
+.projects {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #0b1120; /* Variasi warna gelap biar ada batas section */
+    border-radius: 16px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.placeholder-img {
+    height: 180px;
+    background-color: #334155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.project-tags span {
+    background-color: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+/* CONTACT SECTION */
+.contact {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-btn {
+    padding: 12px 24px;
+    background-color: #1e293b;
+    color: #fff;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #1e293b;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN (Biar nilai tugasnya tambah bagus) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
